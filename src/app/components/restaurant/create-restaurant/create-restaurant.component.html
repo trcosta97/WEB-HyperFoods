@@ -1,0 +1,77 @@
+<section class="container criar-pensamentos ff-inter">
+    <header class="header">
+        <h2>Adicione um <br> novo restaurante:</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input
+                type="textarea"
+                class="input"
+                id="nome"
+                name="nome"
+                placeholder="Nome do restaurante"
+                [value]="restaurante.name">
+            <label for="descricao">Descrição:</label>
+            <input
+                type="textarea"
+                class="input"
+                id="descricao"
+                name="descricao"
+                placeholder="Descrição do restaurante"
+                [value]="restaurante.description">
+                <label for="rua">Rua:</label>                
+            <input
+                type="textarea"
+                class="input"
+                id="rua"
+                name="rua"
+                placeholder="Rua do restaurante"
+                [value]="restaurante.address.street">               
+            <label for="numero">Número:</label>
+            <input
+                type="textarea"
+                class="input"
+                id="numero"
+                name="numero"
+                placeholder="Número do restaurante"
+                [value]="restaurante.address.number">                
+            <label for="bairro">Bairro:</label>
+            <input
+                type="textarea"
+                class="input"
+                id="cidade"
+                name="cidade"
+                placeholder="Cidade do restaurante"
+                [value]="restaurante.address.city">               
+            <label for="estado">Estado:</label>
+            <input
+                type="textarea"
+                class="input"
+                id="estado"
+                name="estado"
+                placeholder="Estado do restaurante"
+                [value]="restaurante.address.province">                
+            <label for="CEP">CEP:</label>
+            <input
+                type="textarea"
+                class="input"
+                id="CEP"
+                name="CEP"
+                placeholder="CEP do restaurante"
+                [value]="restaurante.address.zipCode">
+            <label for="telefone">Telefone:</label>
+            <input
+                type="textarea"
+                class="input"
+                id="celular"
+                name="celular"
+                placeholder="Celular do restaurante"
+                [value]="restaurante.address.phoneNumber">
+            
+                <div class="acoes">
+                    <button (click)="saveRestaurante()" class="botao">Salvar</button>
+                    <button class="botao">Cancelar</button>
+                    
+                </div>
+        </form>
+    </header>
+</section>
